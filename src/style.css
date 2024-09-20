@@ -1,0 +1,434 @@
+.navbar {
+    display: flex; /* ������������� ��������� .navbar ��� flex-���������, 
+    �������� ��� �������� ��������� ������������� � ����� ����� */
+    flex-direction: row; /* ����������� �������� �������� .navbar � ������ (�� �����������) */
+    justify-content: space-between; /* ������������ �������� �������� .navbar ����������, 
+    � ������������ ������������� ����� ���� */
+    background-color: rgba(245, 39, 67, 0.85); /* ������������� ������� ���� ��� .navbar */
+}
+
+.navbar ul {
+    display: flex; /* ������������� ��������� ul ��� flex-��������� ��� ��� �������� ��������� (li) */
+    flex-direction: row; /* ����������� �������� ������ (li) � ������ (�� �����������) */
+    list-style: none; /* ������� ������� ������ */
+    margin: 0; /* ������� ������� ������ � ������ */
+	
+}
+.navbar li {
+    color: white;
+	
+}
+
+.navbar ul li {
+    display: flex; /* ������������� ������ ������� ������ (li) ��� flex-��������� ��� ��� ����������� */
+    margin-right: 10px; /* ��������� ������ ������ � ������� �������� ������ */
+}
+
+.navbar ul li:hover {
+    background-color: rgba(0, 0, 0, 0.91); /* �������� ������� ���� �������� ������ ��� ��������� ������� */
+    border-radius: 20%; /* ��������� ���� �������� ������ ��� ��������� ������� */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* ������� ������������� � ������ */
+    color: white; /* ������������� ���� ������ ������ ������ */
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: auto; /* ���������� ����� ������ �������� ������ */
+}
+
+.navbar div {
+    display: flex; /* ������������� div ��� flex-��������� */
+    margin-right: 20px; /* ��������� ������ ������ � div */
+	
+}
+
+.navbar div a {
+    text-decoration: none; /* ������� ������������� � ������ � div */
+    color: white; /* ������������� ���� ������ ������ ������ */
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: auto; /* ���������� ����� ������ div */
+}
+
+.navbar div:hover {
+    background-color: rgba(0, 0, 0, 0.91); /* �������� ������� ���� div ��� ��������� ������� */
+    border-radius: 20%; /* ��������� ���� div ��� ��������� ������� */
+}
+
+/* ��������� � ����������, ������������ Flexbox ��� ����������� ���������� */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* �������� ����������� �� ����� ������ ��� �������� ����� */
+}
+
+/* �������� � �������� .person � .interests �������� 25% ������ ���������� � ������������ */
+.person, .interests {
+    width: 25%;
+    margin: auto;
+}
+
+/* ����� ��� ����������� ������ ���������� */
+.container img {
+    overflow: hidden;
+    border-radius: 10%; /* ����������� ���� ����������� */
+    box-shadow: 10px 10px 5px black; /* ���������� ���� � ����� ������ */
+    width: 35%; /* ������ ����������� ���������� 50% �� ������ ������������� �������� */
+    height: stretch; /* �������������� ������������� ������ ��� ���������� ��������� */
+    margin: 0;
+}
+.burger {
+    display: none;
+    }
+
+/* ������ ��� ��������� �� ����������� */
+.container img:hover {
+    transform: scale(1.1); /* ���������� ����������� �� 10% */
+    transition: 0.5s ease; /* ������� ������� �� 0.5 ������� */
+    box-shadow: 10px 10px 5px gray; /* ��������� ����� ���� �� ����� */
+}
+
+/* ��� ��� ���� �������� */
+body {
+     
+}
+.css-selector {
+    background: linear-gradient(231deg, #9e0000, #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+/* ��� ��� ��������� ����������� �������� */
+main {
+
+    /* ����������� ���, ������ ����������� �� �������� � ����� ������� ������� */
+}
+
+/* ����� ��� ������ � ���������� */
+p {
+	
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: justify; /* ������������ ������ �� ������ */
+    font-size: 1.2rem; /* ����������� ������ ������ */
+    font-weight: normal; /* ������� ��� ������ */
+    margin-right: 20px;
+    margin-left: 10px; /* ������� �� ����� */
+	color: white;
+}
+p1 {
+    text-align: center; /* ������������ ������ �� ������ */
+    font-size: 1.2rem; /* ����������� ������ ������ */
+    font-weight: normal; /* ������� ��� ������ */
+    margin-right: 20px;
+    margin-left: 10px; /* ������� �� ����� */
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+ h2 {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		color: white;
+    }
+
+/* ������ ��� ��������� �� �������� */
+p:hover {
+    background-color: rgba(0, 0, 0, 0.91); /* ����� ��� ��� ��������� */
+}
+
+/* ������ ������ ���������� */
+.container section {
+    width: 100%; /* ������ �������� ��� ������ ���������� */
+    margin: auto; /* ������������� ������ */
+}
+
+.container-video {
+    display: flex;
+    flex-direction: column; /* ��������� ��� �����, �������� ������������� ����������� */
+}
+
+.video1, .video2, .video3, .video4 {
+    margin-bottom: 20px; /* ������ ����� ��� ������� �����-����� */
+    flex-direction: column; /* ���������� �������� ������������� ����������� */
+    display: flex; /* ���������� Flexbox ��� ���������� ���������� */
+}
+
+.video1 iframe {
+    margin: auto; /* ������������� ����� �� ����������� */
+	box-shadow:  10px 10px 5px rgba(0, 0, 0, 0.91);
+}
+
+.video2 iframe {
+    margin: auto; /* ������������� iframe �� ����������� */
+	box-shadow:  10px 10px 5px rgba(0, 0, 0, 0.91);
+}
+
+.video3 iframe {
+    margin: auto; /* ������������� iframe �� ����������� */
+	box-shadow:  10px 10px 5px rgba(0, 0, 0, 0.91);
+}
+.video4 video {
+    margin: auto; /* ������������� iframe �� ����������� */
+	box-shadow:  10px 10px 5px rgba(0, 0, 0, 0.91);
+}
+.container-audio {
+    display: flex;
+    flex-direction: column; /* ��������� ��� �����, �������� ������������� ����������� */
+}
+
+.audio1, .audio2, .audio3 {
+    display: flex;
+    flex-direction: column; /* ���������� �������� ������������� ����������� */
+    margin-top: 20px; /* ������ ������ ��� ������� �����-����� */
+}
+
+.audio1 audio, .audio2 audio, .audio3 audio {
+    width: 60%; /* ����������� �������� 60% ������ ���������� */
+    margin: auto; /* ������������� ������������ �� ����������� */
+}
+
+.audio1 img, .audio2 img, .audio3 img {
+    margin: auto; /* ������������� ����������� */
+    border-radius: 10%; /* ���������� ����� ����������� */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.91); /* ���������� ��������� ���� � ������������ */
+}
+
+.container-book {
+    display: flex;
+    flex-direction: column; /* ��������� ��� ����, �������� ������������� ����������� */
+}
+
+.book1, .book2, .book3 {
+    display: flex;
+    flex-direction: column; /* ���������� �������� ������������� ����������� */
+    margin-top: 20px; /* ������ ������ ��� ������� �������� ����� */
+}
+
+.book1 img, .book2 img, .book3 img {
+    margin: auto; /* ������������� ����������� */
+    border-radius: 10%; /* ���������� ����� ����������� */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.91); /* ���������� ��������� ���� � ������������ */
+    margin-bottom: 10px; /* ������ ����� ��� ����������� */
+}
+
+.book1 a, .book2 a, .book3 a {
+    margin: auto; /* ������������� ������ */
+    text-decoration: none; /* ������� ������������� � ������ */
+    color: white; /* ���� ������ ������ ������ */
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.2rem; /* ����������� ������ ������ ��� ������ */
+} 
+
+.book1 img:hover, .book2 img:hover, .book3 img:hover {
+    box-shadow: 5px 5px 5px greenyellow; /* ��������� ���� �� ����������-������ ��� ��������� �� ����������� */
+}
+
+.book1 a:hover, .book2 a:hover, .book3 a:hover {
+    background-color: #7cc6e5; /* ��������� ���� ������ �� ����� ��� ��������� */
+    transition: 0.7s ease; /* ������� ������� ���� �� 0.7 ������� */
+}
+
+footer {
+    display: flex;
+    flex-direction: row; /* �������� ������ ������ ������������� ������������� */
+    justify-content: center; /* ������������� ����������� ������ */
+}
+
+footer a {
+    margin-right: 10px; /* ������ ������ � ������ � ������ */
+}
+
+
+@media (max-width: 700px) {
+    /* ��� ������ ������ �� 700px */
+    
+    .container {
+        display: flex;
+        flex-direction: column; /* ������������ �� ������������ ����� */
+    }
+    
+    .person {
+        display: flex;
+        flex-direction: column; /* ���������� �������� ������������� ����������� */
+        flex-wrap: wrap; /* ������� ��������� �� ����� ������ ��� ������������� */
+        width: 100%; /* ������� �������� ��� ������ ���������� */
+        margin: 0; /* ������� ������� */
+    }
+
+    .person p {
+        margin-top: 5px; /* ������ ������ ��� ���������� */
+        margin-bottom: 10px; /* ������ ����� ��� ���������� */
+    }
+    
+    .container img {
+        margin-top: 20px; /* ������ ������ ��� ����������� */
+        border-radius: 10%; /* ���������� ����� ����������� */
+        box-shadow: 5px 5px 5px gray; /* ���� ��� ����������� */
+        width: 95%; /* ����������� �������� 95% ������ ���������� */
+        height: auto; /* ������ ������������� �������������� ��� ������ */
+        margin: auto; /* ������������� ����������� �� ����������� */
+    }
+    
+    .container img:hover {
+        transform: scale(1.03); /* ������ ���������� ����������� ��� ��������� */
+        transition: 0.5s ease; /* ������� ������� ���������� �� 0.5 ������� */
+        box-shadow: 5px 5px 5px #7cc6e5; /* ��������� ���� ��� ��������� */
+    }
+
+    .interests {
+        display: flex;
+        flex-direction: column; /* ���������� �������� ������������� ����������� */
+        flex-wrap: wrap; /* ������� ��������� �� ����� ������ ��� ������������� */
+        width: 100%; /* ������� �������� ��� ������ ���������� */
+        margin: 0; /* ������� ������� */
+    }
+
+    .interests p {
+        margin-top: 10px; /* ������ ������ ��� ���������� */
+        margin-bottom: 0; /* ������� ������ ����� */
+    }
+
+    h2 {
+        margin: 10px; /* ������� ������ ��������� */
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		color: white;
+        text-align: center; /* ������������ ��������� �� ������ */
+    }
+
+    .video1 iframe {
+        margin-top: 20px; /* ������ ������ ��� ����� */
+        width: 95%; /* ����� �������� 95% ������ ���������� */
+        height: auto; /* ������ ������������� �������������� ��� ������ */
+    }
+    
+    .video2 iframe {
+        width: 95%; /* Iframe �������� 95% ������ ���������� */
+        height: 320px; /* ������ Iframe ����������� */
+    }
+    
+    .video3 iframe {
+        width: 95%; /* Iframe �������� 95% ������ ���������� */
+        height: 320px; /* ������ Iframe ����������� */
+    }
+	.video4 video {
+        width: 95%; /* Iframe �������� 95% ������ ���������� */
+        height: 320px; /* ������ Iframe ����������� */
+    }
+
+    .book1 img, .book2 img, .book3 img {
+        width: 95%; /* ����������� ���� �������� 95% ������ ���������� */
+        height: auto; /* ������ ������������� �������������� ��� ������ */
+    }
+    .burger {
+        display: block; /* Отображение элемента как блочный элемент */
+        position: relative; /* Относительное позиционирование для внутренних элементов */
+        width: 40px; /* Ширина контейнера */
+        height: 40px; /* Высота контейнера */
+        margin: auto; /* Автоматические отступы по бокам для центрирования */
+        margin-left: 20px; /* Отступ слева */
+        margin-right: 5px; /* Отступ справа */
+        }
+    .burger span {
+        position: absolute; /* Абсолютное позиционирование для расположения полосок внутри
+        контейнера */
+        width: 30px; /* Ширина каждой полоски */
+        left: 5px; /* Отступ от левого края контейнера */
+        height: 3px; /* Высота полоски */
+        background-color: black; /* Цвет полоски */
+        bottom: 20px; /* Расположение полоски от нижнего края контейнера */
+        }
+    .burger span:nth-child(1) {
+            transform: translateY(-10px); /* Перемещение первой полоски вверх на 10px */
+        }
+    .burger span:nth-child(3) {
+        transform: translateY(10px); /* Перемещение третьей полоски вниз на 10px */
+        }
+    .navbar ul {
+            position: absolute; /* Абсолютное позиционирование относительно ближайшего
+            позиционированного предка, в нашем случае экрана. */
+            background: radial-gradient(circle at top left, rgb(235, 224, 142), rgb(161, 222, 225), rgb(80,
+            173, 224)); /* Радужный градиентный фон от верхнего левого угла */
+            flex-direction: column; /* Элементы списка будут выстраиваться вертикально
+            (необходимо для флекс-контейнера) */
+            width: 30%; /* Ширина списка равна 30% от ширины родительского элемента */
+            height: auto; /* Высота автоматически подстраивается под содержимое */
+            top: 68px; /* Расположение списка на 68px ниже от верхнего края родительского
+            элемента */
+            left: -40%; /* Расположение списка на 40% ширины родительского элемента слева (вне
+            видимой области) */
+            z-index: 2; /* Уровень стека элемента, чтобы он перекрывал другие элементы с меньшим
+            z-index */
+        }
+    .navbar ul li {
+            margin-top: 10px; /* Отступ сверху для элементов списка */
+        }
+    .navbar ul li:hover {
+            background-color: black; /* Цвет фона элемента становится черным при наведении */
+            transform: scale(1.07); /* Увеличение размера элемента на 7% при наведении */
+            transition: 0.4s ease; /* Плавный переход эффекта с продолжительностью 0.4 секунды */
+            border-radius: 5%; /* Закругление углов элемента на 5% */
+            }
+    .navbar ul li a:hover {
+                color: white; /* Цвет текста ссылки становится белым при наведении */
+            }
+    .navbar ul li:nth-child(1) {
+                margin-top: 20px; /* Увеличение отступа сверху для первого элемента списка */
+            }
+    .navbar ul li a {
+                margin-left: 0; /* Установка нулевого отступа слева для ссылок */
+                font-size: 1.2rem; /* Установка размера шрифта в 1.2rem */
+            }
+    .navbar.open ul {
+                transform: translateX(100%); /* Перемещение меню на 100% ширины вправо
+                (выдвигается за пределы видимой области) */
+                transition: 0.7s ease-in-out; /* Плавный переход эффекта с продолжительностью 0.7
+                секунды */
+                background: linear-gradient(231deg, #bfbfbf, #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+                }
+    .navbar.open .burger span:nth-child(1) {
+                    transform: translateY(0) rotate(45deg); /* Поворачивает первую полоску на 45 градусов и
+                    возвращает в исходное положение по вертикали */
+                }
+    .navbar.open .burger span:nth-child(2) {
+                    opacity: 0; /* Делает вторую полоску полностью прозрачной (не видимой) */
+                }
+    .navbar.open .burger span:nth-child(3) {
+                    transform: translateY(0) rotate(-45deg); /* Поворачивает третью полоску на -45 градусов и
+                    возвращает в исходное положение по вертикали */
+                }   
+
+    }        
+            
+
+@media (min-width: 700px) and (max-width: 900px) {
+    /* ��� ������ ������ �� 700px �� 900px */
+    
+    .container img {
+        margin-top: 20px; /* ������ ������ ��� ����������� */
+        border-radius: 10%; /* ���������� ����� ����������� */
+        box-shadow: 5px 5px 5px gray; /* ���� ��� ����������� */
+        width: 320px; /* ������ ����������� ����������� */
+        height: 200px; /* ������ ����������� ����������� */
+        margin: auto; /* ������������� ����������� �� ����������� */
+    }
+}

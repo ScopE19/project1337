@@ -6,6 +6,33 @@
     � ������������ ������������� ����� ���� */
     background-color: rgba(245, 39, 67, 0.85); /* ������������� ������� ���� ��� .navbar */
 }
+.navbar ul .work {
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+.navbar ul .work ul {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    display: none;
+    padding: 0;
+    z-index: 20;
+}
+.navbar ul .work ul li {
+    z-index: 20;
+    background-color: #790291;
+    margin-bottom: 2px;
+}
+.navbar ul .work:hover ul {
+    display: block;
+}
+.navbar ul .work ul li:hover {
+    background-color: white;
+    border-radius: 0;
+}
 
 .navbar ul {
     display: flex; /* ������������� ��������� ul ��� flex-��������� ��� ��� �������� ��������� (li) */
@@ -49,10 +76,6 @@
     margin: auto; /* ���������� ����� ������ div */
 }
 
-.navbar div:hover {
-    background-color: rgba(0, 0, 0, 0.91); /* �������� ������� ���� div ��� ��������� ������� */
-    border-radius: 20%; /* ��������� ���� div ��� ��������� ������� */
-}
 
 /* ��������� � ����������, ������������ Flexbox ��� ����������� ���������� */
 .container {
@@ -86,6 +109,50 @@
     transition: 0.5s ease; /* ������� ������� �� 0.5 ������� */
     box-shadow: 10px 10px 5px gray; /* ��������� ����� ���� �� ����� */
 }
+/*Form settings!!!!!!!!!!! */
+.form {
+    flex-direction: column; /* Arrange the children of the .form container in a column layout */
+}
+
+.form form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.form form fieldset {
+    display: flex; /* Use flexbox for the fieldset layout */
+    flex-direction: column; /* Arrange fieldset elements in a column */
+    width: 50%; /* Set the width of the fieldset to 50% of the container */
+    margin: auto; /* Center the fieldset horizontally */
+    margin-top: 30px; /* Add a margin of 30px to the top */
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom */
+}
+
+.form form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+}
+
+.form form fieldset legend {
+    text-align: center; /* Center the legend text */
+    font-size: 1.2rem; /* Set the font size of the legend text to 1.2rem */
+    font-weight: bold; /* Make the legend text bold */
+}
+
+.form form button {
+    width: 200px; /* Set the width of the button to 200px */
+    font-size: 1.2rem; /* Set the font size of the button text to 1.2rem */
+    background-color: #24779b; /* Set the background color of the button */
+    color: white; /* Set the text color of the button to white */
+    margin: auto; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add a margin of 20px to the bottom */
+}
+
+.form form button:hover {
+    font-size: 1.2rem; /* Maintain the font size of the button text on hover */
+    background-color: #91130c; /* Change the background color of the button on hover */
+    color: rgb(248, 243, 243); /* Change the text color of the button on hover */
+}
+
 
 /* ��� ��� ���� �������� */
 body {
@@ -225,7 +292,10 @@ p:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.91); /* ���������� ��������� ���� � ������������ */
     margin-bottom: 10px; /* ������ ����� ��� ����������� */
 }
-
+.textshadow {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .book1 a, .book2 a, .book3 a {
     margin: auto; /* ������������� ������ */
     text-decoration: none; /* ������� ������������� � ������ */
@@ -256,7 +326,9 @@ footer a {
 
 @media (max-width: 700px) {
     /* ��� ������ ������ �� 700px */
-    
+    .form form fieldset{
+        width: 65%;
+    }
     .container {
         display: flex;
         flex-direction: column; /* ������������ �� ������������ ����� */
@@ -313,7 +385,6 @@ footer a {
     .video1 iframe {
         margin-top: 20px; /* ������ ������ ��� ����� */
         width: 95%; /* ����� �������� 95% ������ ���������� */
-        height: auto; /* ������ ������������� �������������� ��� ������ */
     }
     
     .video2 iframe {
@@ -343,6 +414,10 @@ footer a {
         margin-left: 20px; /* Отступ слева */
         margin-right: 5px; /* Отступ справа */
         }
+    .burger:hover {
+        background-color: rgba(88, 88, 88, 0.91); /* �������� ������� ���� div ��� ��������� ������� */
+        border-radius: 20%; /* ��������� ���� div ��� ��������� ������� */
+    }
     .burger span {
         position: absolute; /* Абсолютное позиционирование для расположения полосок внутри
         контейнера */
@@ -398,7 +473,8 @@ footer a {
                 (выдвигается за пределы видимой области) */
                 transition: 0.7s ease-in-out; /* Плавный переход эффекта с продолжительностью 0.7
                 секунды */
-                background: linear-gradient(231deg, #bfbfbf, #000000);
+                background: linear-gradient(231deg, #8B008B, #000000);
+	    box-shadow: 5px 5px 0px #000000, 5px -5px 0px #000000, -5px -5px 0px #000000, -5px 5px 0px #000000;
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 5s ease infinite;
@@ -415,14 +491,47 @@ footer a {
     .navbar.open .burger span:nth-child(3) {
                     transform: translateY(0) rotate(-45deg); /* Поворачивает третью полоску на -45 градусов и
                     возвращает в исходное положение по вертикали */
-                }   
-
+                }
+      .navbar ul .work ul {
+        position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+        flex-direction: column; /* Arrange children in a column */
+        left: 10px; /* Offset the dropdown 10px from the left of the parent */
+        top: 0; /* Align the top of the dropdown with the top of the parent */
+        width: 100px; /* Set a fixed width for the dropdown */
+        display: none; /* Initially hide the dropdown */
+        padding: 0; /* Remove default padding */
+        z-index: 20; /* Set a higher stacking order for the dropdown */
+    }
+    
+    .navbar ul .work ul li {
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 10px; /* Add bottom margin */
+        background-color: unset; /* Remove default background color */
+        font-size: 1.2rem; /* Increase font size */
+        margin-left: 10px; /* Offset the list item 10px from the left */
+        color: rgb(255, 255, 255); /* Set text color to black */
+    }
+    
+    .navbar ul .work ul li:hover {
+        background-color: black; /* Change background color to black on hover */
+    }
+    
+    .navbar ul .work ul li:hover a:hover {
+        color: white; /* Change text color to white when hovering over the link */
+    }
+    
+    .navbar ul .work:hover ul li a {
+        color: rgb(255, 255, 255); /* Set text color to black when hovering over the parent */
+    }
+    
     }        
             
 
 @media (min-width: 700px) and (max-width: 900px) {
     /* ��� ������ ������ �� 700px �� 900px */
-    
+    .form form fieldset {
+        width: 80%;
+    }
     .container img {
         margin-top: 20px; /* ������ ������ ��� ����������� */
         border-radius: 10%; /* ���������� ����� ����������� */

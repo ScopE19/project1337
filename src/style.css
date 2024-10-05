@@ -189,7 +189,7 @@ body {
   width: 50px;
   height: 50px;
   left: 49%;
-  top: 90%;
+  top: 95%;
   position: absolute;
   transition: all 0.6s ease;
 }
@@ -565,6 +565,7 @@ footer a {
   }
   .heihachi img {
     width: 95%;
+    height: auto;
   }
   .burger {
     display: block; /* Отображение элемента как блочный элемент */
@@ -667,6 +668,10 @@ footer a {
     transform: translateY(0) rotate(-45deg); /* Поворачивает третью полоску на -45 градусов и
                     возвращает в исходное положение по вертикали */
   }
+  .secretbutton {
+    left: 48%;
+    top: 118%;
+  }
   .navbar ul .work ul {
     position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
     flex-direction: column; /* Arrange children in a column */
@@ -693,6 +698,9 @@ footer a {
 
   .navbar ul .work ul li:hover a:hover {
     color: white; /* Change text color to white when hovering over the link */
+  }
+  .math .gif {
+    width: 95%;
   }
 
   .navbar ul .work:hover ul li a {

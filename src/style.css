@@ -161,10 +161,50 @@
   background-color: #91130c; /* Change the background color of the button on hover */
   color: rgb(248, 243, 243); /* Change the text color of the button on hover */
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+.heihachi {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.heihachi img {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.91);
+}
+.heihachi iframe {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.91);
+}
+
+.secretbutton {
+  width: 50px;
+  height: 50px;
+  left: 49%;
+  top: 90%;
+  position: absolute;
+  transition: all 0.6s ease;
+}
 /* MATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .math {
   display: flex;
   flex-direction: column;
+}
+.math .gif {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 7%;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 .math form {
   display: flex;
@@ -428,6 +468,7 @@ footer {
   display: flex;
   flex-direction: row; /* �������� ������ ������ ������������� ������������� */
   justify-content: center; /* ������������� ����������� ������ */
+  margin-bottom: 200px;
 }
 
 footer a {
@@ -517,6 +558,13 @@ footer a {
   .book3 img {
     width: 95%; /* ����������� ���� �������� 95% ������ ���������� */
     height: auto; /* ������ ������������� �������������� ��� ������ */
+  }
+  .heihachi iframe {
+    width: 95%;
+    height: 320px;
+  }
+  .heihachi img {
+    width: 95%;
   }
   .burger {
     display: block; /* Отображение элемента как блочный элемент */

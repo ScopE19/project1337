@@ -43,7 +43,7 @@
   display: flex; /* ������������� ��������� ul ��� flex-��������� ��� ��� �������� ��������� (li) */
   flex-direction: row; /* ����������� �������� ������ (li) � ������ (�� �����������) */
   list-style: none; /* ������� ������� ������ */
-  margin: 0; /* ������� ������� ������ � ������ */
+  margin: 0; /
 }
 .navbar li {
   color: white;
@@ -70,6 +70,8 @@
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
   margin: auto; /* ���������� ����� ������ �������� ������ */
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .navbar div {
@@ -184,12 +186,29 @@ body {
   flex-direction: column;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.91);
 }
+body .kartinki{
+  border: #000;
+  margin: auto;
+}
 
+body .kartinkidiv{
+  display: flex;
+  flex-direction: column;
+  margin-top: -140px;
+  margin-bottom: 120px;
+  height: auto;
+  width: 100%;
+}
+iframe.kartinki {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+}
 .secretbutton {
   width: 50px;
   height: 50px;
-  left: 48%;
-  top: 105%;
+  left: 90%;
+  top: 130%;
   position: absolute;
   transition: all 0.6s ease;
 }
@@ -732,8 +751,8 @@ footer a {
                     возвращает в исходное положение по вертикали */
   }
   .secretbutton {
-    left: 48%;
-    top: 118%;
+    left: 90%;
+    top: 180%;
   }
   .navbar ul .work ul {
     position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
